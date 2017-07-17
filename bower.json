@@ -1,0 +1,18 @@
+{
+  "name": "learning-time",
+  "description": "Learning lab for Marcus",
+  "main": "",
+  "authors": [
+    "Alex Lane <alex@alexlane.me>"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/syntax270d/learning-time",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
