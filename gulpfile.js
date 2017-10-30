@@ -27,7 +27,7 @@
         baseDir:   path.resolve('src'),
         directory: false,
         routes: {
-          "/vendor": path.resolve('bower_components')
+          "/vendor": path.resolve('node_modules')
         }
       }
     };
