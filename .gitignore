@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# stop tracking built css file
+src/css
