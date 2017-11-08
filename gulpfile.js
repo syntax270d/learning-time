@@ -26,6 +26,7 @@
   }
 
   function _serve() {
+    // Set options
     let options = {
       server: {
         baseDir:   path.resolve('src'),
@@ -42,29 +43,20 @@
       online:         true,
     };
 
+    // Start server
     bs.init(options);
 
-    gulp.watch(
-      path.join(__dirname + '/src/**/*.html'),
-      [], bs.reload
-    );
-
-    gulp.watch(
-      path.join(__dirname + '/src/scss/**/*.scss'),
-      ['sass'], bs.reload
-    )
+    // Watch statements
+    gulp.watch(path.join(__dirname, 'src', '**', '*'), bs.reload);
+    gulp.watch(path.join(__dirname, 'src', 'sass', '**', '*.scss'), _sass);
   }
 
   function _sass() {
-    const print = require('gulp-print');
     const sass  = require('gulp-sass');
 
     let glob = path.join(__dirname, 'src', 'sass', 'style.scss');
 
     gulp.src(glob)
-      // Log files
-      .pipe(print())
-
       // Run SASS preprocessor
       .pipe(sass().on('error', sass.logError))
 
