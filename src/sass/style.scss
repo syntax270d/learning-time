@@ -1,0 +1,26 @@
+body {
+  // padding-top: 50px;
+}
+
+.jumbotron {
+  background-image:    url('http://lorempixel.com/1600/900/abstract');
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-size:     cover;
+  position:            relative;
+
+  &:before {
+    background: rgba(255, 255, 255, 0.7);
+    content:    "";
+    display:    block;
+    height:     100%;
+    left:       0;
+    position:   absolute;
+    top:        0;
+    width:      100%;
+  }
+
+  * { position: relative; }
+
+  // fffffffuuuuuuuuuuuu
+}
